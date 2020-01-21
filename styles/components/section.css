@@ -3,6 +3,10 @@
   padding: 70px 0;
 }
 
+.section-hero .section-content {
+  padding: 153px 80px 190px 80px;
+}
+
 .section-hero {
   text-align: center;
 }
@@ -18,6 +22,7 @@
 
 .section-background img {
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -27,13 +32,20 @@
   left: 0;
   right: 0;
   bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-image: -moz-linear-gradient(0deg, rgb(9, 5, 47) 0%, rgb(49, 29, 94) 100%);
   background-image: -webkit-linear-gradient(0deg, rgb(9, 5, 47) 0%, rgb(49, 29, 94) 100%);
   background-image: -ms-linear-gradient(0deg, rgb(9, 5, 47) 0%, rgb(49, 29, 94) 100%);
-  opacity: 0.85;
+  background-image: linear-gradient(0deg, rgb(9, 5, 47) 0%, rgb(49, 29, 94) 100%);
+  opacity: 0.851;
 }
 
 .section-foreground {
@@ -46,106 +58,32 @@
 }
 
 .section-hero .section-foreground {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-
 }
-
 
 .section-hero .section-foreground .section-body {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
-
-
-
-
-
-
-.section-hero .section-title{
-  font-size: 32px;
-  font-weight: 900;
-  letter-spacing: 0.32px;
-  color: #ffffff;
-}
-
-.section-hero .section-content{
-padding: 180px 80px;
-}
-
-
-.section-story *{
-  text-align: left;
-}
-
-.section-story .section-description{
-  line-height: 1.57;
-  letter-spacing: 0.42px;
-  color: rgba(65, 61, 75, 0.75);
-  margin-bottom: 30px;
-}
-
-.section-story .section-image{
-  max-height: 300px;
-  }
-
-.section-video .section-title{
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  color: #ffffff;
-}
-
-.section-team .section-title{
-  font-size: 22px;
-  letter-spacing: 1.1px;
-  color: #ffffff;
-}
-
-.section-team .section-subtitle{
-  font-size: 14px;
-  letter-spacing: 1.05px;
-  color: #f9f9f9;
-}
-
-.section-team .section-description{
-  color: #f3f3f3;
-  margin-top: 70px;
-  margin-bottom: 26px;
-}
-
-
-.section-works-top .section-title{
-margin: 0;
-}
-
-.section-works-top .section-subtitle{
-margin: 0;
-}
-
-.section-works-top .grid{
-  justify-content: space-between;
-}
-
-.gallery{
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-size: 0;
-  padding: 70px 0;
-}
-
-.gallery img{
-  width: 267px;
-  height: 200px;
-  font-size: 0;
-  margin: 0;
-  padding: 0;
-}
-.section-description{
+.section-description {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -155,35 +93,236 @@ margin: 0;
   margin-bottom: 50px;
 }
 
-
-
 .section-title {
   font-family: PlayfairDisplay;
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 1.1px;
-  text-align: center;
   color: #413d4b;
   text-transform: uppercase;
-  margin-bottom: 21px;
+  margin: 0 0 21px 0;
 }
 
 .section-subtitle {
   font-family: PlayfairDisplay;
   font-size: 14px;
   letter-spacing: 1.05px;
-  text-align: center;
   color: rgba(47, 45, 53, 0.75);
   margin-bottom: 50px;
 }
 
+.section-hero .section-title {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+/*                                              STORY*/
+
+.section-story {
+  text-align: left;
+}
+
+.section-story .section-description {
+  line-height: 1.57;
+  letter-spacing: 0.42px;
+  color: rgba(65, 61, 75, 0.75);
+  margin-bottom: 30px;
+}
+
+.section-story .section-image {
+  max-height: 300px;
+}
+
+/*                                                  VIDEO*/
+
+.section-video {
+  padding: 200px 0;
+}
+
+.section-video .section-title {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  margin: 34px 0 0 0;
+}
+
+/*                                              EXPERTISE*/
+
+.section-expertise .grid-item {
+  border: solid #ebebeb 0.5px;
+}
+
+.section-expertise .section-title {
+  margin-bottom: 16px;
+}
+
+/*                                                Team*/
+
+.section-team .section-title {
+  font-size: 22px;
+  letter-spacing: 1.1px;
+  color: #ffffff;
+}
+
+.section-team .section-subtitle {
+  font-size: 14px;
+  letter-spacing: 1.05px;
+  color: #f9f9f9;
+}
+
+.section-team .section-description {
+  color: #f3f3f3;
+  margin-top: 70px;
+  margin-bottom: 26px;
+}
+
+.section-team .separator-bottom::after {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+
+/*                                                Works*/
+
+.section-works-top .section-title {
+  margin: 0;
+}
+
+.section-works-top .section-subtitle {
+  margin: 0;
+}
+
+.section-works-top .grid {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/*                                                  Gallery*/
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 0;
+  padding: 70px 0;
+}
+
+.gallery img {
+  max-height: 200px;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery figure{
+  width: calc( 100% / 6);
+}
+
+/*                                                  Slider*/
+
+.section-slider .section-foreground {
+  padding: 0 90px;
+}
+
+.section-slider .section-title {
+  opacity: 0.9;
+  font-size: 70px;
+  line-height: 0.22;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/*                                                        Clients*/
+
+.section-clients .section-title {
+  letter-spacing: 1.1px;
+}
+
+.section-clients .brands img {
+  margin-bottom: 50px;
+}
+
+.section-clients .brands img:last-child {
+  margin-bottom: 0;
+}
+
+.section-clients .brands {
+  margin-top: 31px;
+}
+
+.section-clients {
+  text-align: left;
+}
+
+/*                                                          Footer*/
+
+.section-footer .section-title {
+  line-height: 50px;
+  margin-bottom: 27px;
+}
+
+.section-footer .logo {
+  margin-bottom: 27px;
+}
+
+.section-footer {
+  text-align: left;
+}
+
+.section-footer .section-description {
+  line-height: 1.86;
+  letter-spacing: 0.35px;
+  margin: 0;
+}
+
+.section-footer .section-title {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.75px;
+  color: #ffffff;
+}
+
+.section-footer .input {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.section-footer .input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+.section-footer .input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+.section-footer .input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+}
+
+
+/*                                                      All*/
 .separator-bottom::after {
   content: "";
   display: block;
   width: 50px;
   height: 2px;
-  background-color: rgba(152, 108, 172, 0.58);
   margin: 18px auto;
+  background-color: rgb(65, 61, 75);
+  opacity: 0.302;
 }
 
 .separator-top::before {
@@ -198,12 +337,53 @@ margin: 0;
   margin-right: auto;
 }
 
-.section-expertise {}
+/*                                              Sasha grey*/
 
-.section-expertise .grid-item {
-  border: solid #ebebeb 0.5px;
+.holder {
+  background: #6d72ff;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
-.cutter {
-  overflow: hidden;
+.fun {
+  padding: 30px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  background: #6d72ff;
+  width: 100%;
+  height: 100%;
+  font-size: 85px;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.fun a {
+  color: red;
+  opacity: 0;
+}
+
+.card:hover > .holder {
+  -webkit-transform: translateY(-34%);
+  transform: translateY(-34%);
+  -webkit-transition: 0.5S;
+  transition: 0.5S
+}
+
+.card:hover > .fun {
+  -webkit-transform: translateY(18%);
+  transform: translateY(18%);
+  -webkit-transition: 0.5S;
+  transition: 0.5S
+}
+
+.card:hover a {
+  opacity: 1;
+  -webkit-transition: 0.5S;
+  transition: 0.5S;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }

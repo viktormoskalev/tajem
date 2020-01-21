@@ -9,8 +9,10 @@
   text-align: center;
   text-decoration: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
+
 .button:hover {
   text-decoration: none;
   cursor: pointer;
@@ -20,38 +22,41 @@
   padding: 32px 64px;
   font-size: 20px;
 }
+
 .button-medium {
-  padding: 16px 16px;
+  padding: 15px 15px;
   font-size: 16px;
   font-weight: 900;
+  line-height: 10px
 }
+
 .button-small {
-  padding: 4px 8px;
-  font-size: 12px;
+  padding: 10px 22px;
+  font-size: 25px;
+  line-height: 1em;
 }
 
 .button-primary {
- color: #00e0d0;
- background-color: transparent;
+  color: #00e0d0;
+  background-color: transparent;
   border: solid 1px #00e0d0;
-  
+
 }
 
 .button-primary:hover {
   background-color: #00e0d0;
-   color:#000000;
+  color: #000000;
   opacity: 0.85;
 }
 
-.button-success {
-  background-color: green;
-  color: #ffffff;
+.button-grey {
+  border: none;
+  opacity: 0.5;
+  background-color: #ffffff;
 }
 
-.button-success:hover {
-  background-color: transparent;
-  color: green;
-  border-color: green;
+.button-grey:hover {
+  opacity: 1;
 }
 
 .button-danger {

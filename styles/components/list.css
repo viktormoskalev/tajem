@@ -1,2 +1,35 @@
 .list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.icon-li::before {
+  margin-right: 16px;
+}
+
+.list {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+footer .list span {
+  line-height: 1.86;
+}
+
+.icon-left .grid-item:nth-child(1) {
+  width: 1em;
+  padding: 0;
+  margin-right: 16px;
+}
+
+.icon-left .grid-item:nth-child(2) {
+  width: calc(100% - 1em - 16px);
+  padding: 0;
+}
+
+.icon-left {
+  margin: 0;
+  padding: 0;
 }

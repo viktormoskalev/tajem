@@ -1,8 +1,8 @@
 .card {
   font-size: 0;
+  position: relative;
+  overflow: hidden
 }
-
-
 
 .card-title {
   font-size: 14px;
@@ -14,7 +14,14 @@
 .section-expertise .card-title {
   color: #413d4b;
   margin-top: 35px;
+}
 
+.section-expertise .card-description {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.7px;
+  color: rgba(51, 51, 51, 0.75);
+  margin-top: 15px;
 }
 
 .section-team .card-title {
@@ -22,17 +29,18 @@
   margin-top: 20px;
 }
 
-
-.section-expertise .card-description {
-  font-size: 14px;
-  line-height: 1.57;
-  letter-spacing: 0.7px;
-  color: rgba(51, 51, 51, 0.75);
-  margin-top: 25px;
+.section-team .card-description {
+  color: #ffffff;
+  margin-top: 10px;
 }
 
 .section-team .card-description {
   color: rgba(250, 250, 250, 0.7);
+}
+
+.section-expertise .card {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card-description {
@@ -40,17 +48,23 @@
   margin-bottom: 28px;
 }
 
+.section-expertise .card-description {
+  margin-bottom: 0;
+}
 
 .card-container {
   padding: 1px;
   border: solid 1px rgba(225, 225, 225, 0.76);
-
 }
 
+.card-icon {
+  font-size: 50px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00e0d0), to(#4aa3cc));
+  background-image: linear-gradient(to top, #00e0d0, #4aa3cc);
+}
 
-
-.card-image {
+.section-team .card-image {
   height: 229px;
 }
-
-.card-image > img {}

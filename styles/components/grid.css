@@ -1,5 +1,8 @@
 .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: -20px;
 }
@@ -11,21 +14,39 @@
 .grid-large {
   margin: 0 -50px;
 }
+
 .grid-large .grid-item {
   padding: 0 50px;
 }
 
 .grid-medium {
-  margin:  -40px;
-}
-.grid-medium .grid-item {
-  padding:  40px;
+  margin: -2px -2px;
 }
 
-.grid-small{
+.grid-medium .grid-item {
+  padding: 2px 2px;
+}
+
+.grid-small {
   margin: -10px;
 }
 
-.grid-small .grid-item{
+.grid-small .grid-item {
   padding: 10px;
+}
+
+.grid-micro {
+  margin: -3px;
+}
+
+.grid-micro .grid-item {
+  padding: 3px;
+}
+
+.grid-mini {
+  margin: -5px;
+}
+
+.grid-mini .grid-item {
+  padding: 5px;
 }
