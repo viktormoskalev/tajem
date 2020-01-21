@@ -1,0 +1,25 @@
+.nav {
+  
+}
+.nav .nav-item {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.33px;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+
+
+.nav a:hover {
+color: #00e0d0;
+text-decoration: none;
+  cursor: pointer;
+}
+
+.nav .is-active {
+  color: #00e0d0;
+}

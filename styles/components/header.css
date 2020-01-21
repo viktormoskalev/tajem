@@ -1,0 +1,15 @@
+
+.section-hero .section-foreground .section-header {
+  padding: 15px 0;
+}
+
+.section-header .logo{
+  height: 50px;
+display: inline-block;
+}
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
